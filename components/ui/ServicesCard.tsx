@@ -1,7 +1,8 @@
 import { bg1, icon1 } from "@/utils/assets";
 import Image from "next/image";
 import Link from "next/link";
-import { BsBrush, BsCodeSlash, BsLayoutWtf } from "react-icons/bs";
+import { BsCodeSlash, BsLayoutWtf } from "react-icons/bs";
+import { LuLayoutPanelLeft } from "react-icons/lu";
 
 const ServicesCard = () => {
   return (
@@ -10,13 +11,13 @@ const ServicesCard = () => {
 
       <ul className="flex items-center justify-between pb-10 pt-6 px-16">
         <li className="card w-20 h-20 flex justify-center items-center">
-          <BsBrush className="text-[2rem] text-lightest-slate" />
+          <BsLayoutWtf className="text-[2rem] text-lightest-slate" />
+        </li>
+        <li className="card w-20 h-20 flex justify-center items-center">
+          <LuLayoutPanelLeft className="text-[2rem] text-lightest-slate" />
         </li>
         <li className="card w-20 h-20 flex justify-center items-center">
           <BsCodeSlash className="text-[2rem] text-lightest-slate" />
-        </li>
-        <li className="card w-20 h-20 flex justify-center items-center">
-          <BsLayoutWtf className="text-[2rem] text-lightest-slate" />
         </li>
       </ul>
 
