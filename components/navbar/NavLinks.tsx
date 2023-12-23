@@ -11,7 +11,7 @@ const NavLinks = () => {
       </li>
       <li>
         <Link
-          href="/"
+          href="/about"
           className="text-lightest-slate/60 hover:text-lightest-slate duration-300 ease-linear"
         >
           <span className="text-green">02.</span> About
@@ -19,7 +19,7 @@ const NavLinks = () => {
       </li>
       <li>
         <Link
-          href="/"
+          href="/services"
           className="text-lightest-slate/60 hover:text-lightest-slate duration-300 ease-linear"
         >
           <span className="text-green">03.</span> Works
@@ -27,7 +27,7 @@ const NavLinks = () => {
       </li>
       <li>
         <Link
-          href="/"
+          href="/contact"
           className="text-lightest-slate/60 hover:text-lightest-slate duration-300 ease-linear"
         >
           <span className="text-green">04.</span> Contact
