@@ -12,11 +12,15 @@
   }
 
   .btn {
-    @apply px-8 py-3 font-medium rounded-2xl text-base flex items-center gap-3;
+    @apply px-8 py-3 font-medium rounded-2xl text-base flex items-center justify-center gap-3;
   }
 
   .btn-white {
     @apply bg-dark text-lightest-slate hover:bg-lightest-slate hover:text-dark duration-300 ease-linear;
+  }
+
+  .input {
+    @apply outline-none bg-dark/20 rounded-md px-5 py-4 border border-white/5 text-lightest-slate placeholder:text-lightest-slate/50 text-sm;
   }
 
   .bg-card {
