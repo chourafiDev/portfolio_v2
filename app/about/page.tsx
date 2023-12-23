@@ -228,7 +228,9 @@ const Page = () => {
 
             <div className="grid grid-cols-2 gap-10 py-3 mt-6">
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   Nextjs
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
@@ -241,7 +243,9 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   Nodejs (Expressjs)
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
@@ -254,7 +258,9 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   Laravel
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
@@ -268,7 +274,9 @@ const Page = () => {
               </div>
 
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   MongoDb
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
@@ -281,7 +289,9 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   Javascript (ES6+)
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
@@ -294,7 +304,9 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   Reactjs
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
@@ -307,7 +319,9 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   HTML/CSS
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
@@ -320,7 +334,9 @@ const Page = () => {
                 </div>
               </div>
               <div>
-                <p className="dark:text-lightest-slate/50 text-dark/60 mb-3">
+                <p
+                  className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
+                >
                   Taiwlindcss
                 </p>
                 <div className="w-full bg-lightest-slate/20 rounded-full">
