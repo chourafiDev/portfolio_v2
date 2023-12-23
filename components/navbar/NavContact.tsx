@@ -1,8 +1,10 @@
-import React from "react";
+import Link from "next/link";
 
 const NavContact = () => {
   return (
-    <button className="btn btn-white bg-gradient">Let&apos;s talk</button>
+    <Link href="/contact" className="btn btn-white bg-gradient">
+      Let&apos;s talk
+    </Link>
   );
 };
 
