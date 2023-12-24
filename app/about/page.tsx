@@ -14,10 +14,10 @@ import Sticky from "react-sticky-el";
 
 const Page = () => {
   return (
-    <main className="my-16">
-      <section className="grid grid-cols-3 gap-12">
+    <main className="lg:my-16 my-10">
+      <section className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-0">
         <Sticky scrollElement=".scrollarea" hideOnBoundaryHit={false}>
-          <div className="card p-6">
+          <div className="card md:p-6 p-3">
             <Image src={bg1} alt="bg1" className="bg-card" />
 
             <div className="w-full h-80 rounded-30 overflow-hidden relative">
@@ -38,7 +38,7 @@ const Page = () => {
               Fullstack developer
             </p>
 
-            <ul className="flex items-center justify-center gap-3 h-16 px-10 mt-6">
+            <ul className="flex items-center justify-center gap-3 h-16 md:px-10 px-6 mt-6">
               <li className="w-14 h-14 z-10">
                 <Link
                   href="/"
@@ -67,7 +67,7 @@ const Page = () => {
           </div>
         </Sticky>
         <div className="col-span-2">
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex items-center justify-center gap-8 lg:mt-0 mt-16">
             <Image
               src={star}
               alt="star"
@@ -75,7 +75,7 @@ const Page = () => {
               height={50}
               className="object-cover"
             />
-            <h2 className="font-semibold text-[3rem] text-lightest-slate">
+            <h2 className="font-semibold md:text-[3rem] text-center text-3xl text-lightest-slate">
               About Me
             </h2>
             <Image
@@ -87,7 +87,7 @@ const Page = () => {
             />
           </div>
 
-          <div className="card px-6 pb-6 pt-28 mt-10">
+          <div className="card md:px-6 px-3 md:pb-6 pb-3 pt-28 mt-10">
             <Image src={bg1} alt="bg1" className="bg-card" />
 
             <Image
@@ -115,7 +115,7 @@ const Page = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mt-8 z-10 relative">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-8 z-10 relative">
               <ul className="text-lightest-slate/60 bg-lightest-slate/5 p-5 rounded-30 text-sm space-y-3">
                 <li className="flex items-center gap-2">
                   <BsFillCaretRightFill className="text-green text-[10px]" />
@@ -226,7 +226,7 @@ const Page = () => {
               SKILLS
             </h2>
 
-            <div className="grid grid-cols-2 gap-10 py-3 mt-6">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-10 py-3 mt-6">
               <div>
                 <p
                   className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
@@ -272,7 +272,6 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-
               <div>
                 <p
                   className={`${RobotoMono.className} dark:text-lightest-slate/50 text-dark/60 mb-3`}
@@ -353,9 +352,9 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-4 gap-6 mt-12">
+      <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
         <Profiles />
-        <div className="col-span-2">
+        <div className="lg:col-span-2 col-span-1">
           <ContactCard />
         </div>
         <CredentialsCard />
