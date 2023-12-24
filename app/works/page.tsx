@@ -145,7 +145,7 @@ const page = () => {
               height={50}
               className="object-cover"
             />
-            <h2 className="font-semibold md:text-[3rem] text-center text-3xl text-lightest-slate">
+            <h2 className="font-semibold lg:text-[3rem] md:text-4xl text-center text-[1.75rem] text-lightest-slate">
               All Projects
             </h2>
             <Image

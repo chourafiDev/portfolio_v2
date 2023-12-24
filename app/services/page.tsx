@@ -10,12 +10,12 @@ import { LuLayoutPanelLeft } from "react-icons/lu";
 
 const page = () => {
   return (
-    <main className="my-16">
-      <section className="grid grid-cols-3 gap-12">
+    <main className="lg:my-16 my-10">
+      <section className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-0">
         <div className="card">
           <Image src={bg1} alt="bg1" className="bg-card" />
 
-          <ul className="flex flex-col h-full justify-between px-16 py-20">
+          <ul className="flex flex-col lg:h-full h-96 justify-between md:px-16 px-8 lg:py-20 py-14">
             <li className="flex items-center gap-6 z-10">
               <BsLayoutWtf className="text-[2rem] text-lightest-slate" />
               <p className="text-lightest-slate font-medium text-lg">
@@ -37,7 +37,7 @@ const page = () => {
           </ul>
         </div>
         <div className="col-span-2">
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex items-center justify-center gap-8 lg:mt-0 mt-16">
             <Image
               src={star}
               alt="star"
@@ -45,7 +45,7 @@ const page = () => {
               height={50}
               className="object-cover"
             />
-            <h2 className="font-semibold text-[3rem] text-lightest-slate">
+            <h2 className="font-semibold lg:text-[3rem] md:text-4xl text-center text-[1.75rem] text-lightest-slate">
               My Offerings
             </h2>
             <Image
@@ -56,7 +56,8 @@ const page = () => {
               className="object-cover"
             />
           </div>
-          <div className="card px-6 pb-6 pt-28 mt-10">
+
+          <div className="card md:px-6 px-3 md:pb-6 pb-3 pt-28 mt-10">
             <Image src={bg1} alt="bg1" className="bg-card" />
             <Image
               src={icon2}
@@ -64,7 +65,7 @@ const page = () => {
               className="absolute top-0 left-8 duration-300 ease-linear"
             />
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
               <div className="card p-4">
                 <Image src={bg1} alt="bg1" className="bg-card" />
                 <h1
@@ -93,7 +94,7 @@ const page = () => {
                   etisam dignissim.
                 </p>
               </div>
-              <div className="card p-4 col-span-2">
+              <div className="card p-4 md:col-span-2 col-span-1">
                 <Image src={bg1} alt="bg1" className="bg-card" />
                 <h1
                   className={`${RobotoMono.className} text-lightest-slate/40 font-semibold`}
@@ -112,9 +113,9 @@ const page = () => {
         </div>
       </section>
 
-      <section className="grid grid-cols-4 gap-6 mt-12">
+      <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
         <Profiles />
-        <div className="col-span-2">
+        <div className="lg:col-span-2 col-span-1">
           <ContactCard />
         </div>
         <CredentialsCard />
