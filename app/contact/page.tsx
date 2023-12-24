@@ -8,15 +8,15 @@ import { BsHandIndexThumb } from "react-icons/bs";
 
 const page = () => {
   return (
-    <main className="my-16 grid grid-cols-3 gap-12">
-      <div className="space-y-20">
+    <main className="lg:my-16 my-10 grid lg:grid-cols-3 grid-cols-1 gap-12">
+      <div className="lg:space-y-20 space-y-10">
         <div>
-          <h5 className="text-lightest-slate font-semibold text-lg uppercase">
+          <h5 className="text-lightest-slate font-semibold md:text-lg text-base uppercase">
             Contact info
           </h5>
           <ul className="space-y-4 mt-6">
             <li className="z-10 flex items-center gap-4">
-              <div className="card w-20 h-20 flex justify-center items-center">
+              <div className="card md:w-[4rem] md:h-[4rem] w-16 h-16 flex justify-center items-center">
                 <HiOutlineMail className="text-2xl text-lightest-slate" />
               </div>
 
@@ -28,7 +28,7 @@ const page = () => {
               </div>
             </li>
             <li className="z-10 flex items-center gap-4">
-              <div className="card w-20 h-20 flex justify-center items-center">
+              <div className="card md:w-[4rem] md:h-[4rem] w-16 h-16 flex justify-center items-center">
                 <HiOutlinePhone className="text-2xl text-lightest-slate" />
               </div>
 
@@ -40,12 +40,12 @@ const page = () => {
           </ul>
         </div>
         <div>
-          <h5 className="text-lightest-slate font-semibold text-lg uppercase flex items-center gap-3">
+          <h5 className="text-lightest-slate font-semibold md:text-lg text-base uppercase flex items-center gap-3">
             I&apos;m On{" "}
             <BsHandIndexThumb className="rotate-180 text-lightest-slate/40" />
           </h5>
           <ul className="flex items-center gap-3 h-16 mt-8">
-            <li className="w-20 h-20 z-10">
+            <li className="md:w-[4rem] md:h-[4rem] w-16 h-16 z-10">
               <Link
                 href="/"
                 className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
@@ -53,7 +53,7 @@ const page = () => {
                 <FaLinkedinIn className="text-2xl" />
               </Link>
             </li>
-            <li className="w-20 h-20 z-10">
+            <li className="md:w-[4rem] md:h-[4rem] w-16 h-16 z-10">
               <Link
                 href="/"
                 className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
@@ -61,7 +61,7 @@ const page = () => {
                 <FaGithub className="text-2xl" />
               </Link>
             </li>
-            <li className="w-20 h-20 z-10">
+            <li className="md:w-[4rem] md:h-[4rem] w-16 h-16 z-10">
               <Link
                 href="/"
                 className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
@@ -72,18 +72,18 @@ const page = () => {
           </ul>
         </div>
       </div>
-      <div className="col-span-2 card p-8">
+      <div className="lg:col-span-2 col-span-1 card md:p-8 p-4 lg:mt-0 mt-10">
         <Image
           src={icon2}
           alt="icon2"
           className="absolute top-0 right-10 duration-300 ease-linear"
         />
 
-        <h1 className="text-lightest-slate text-4xl font-medium">
+        <h1 className="text-lightest-slate md:text-4xl text-2xl font-medium">
           Let’s work <span className="text-green">together.</span>
         </h1>
 
-        <form className="flex flex-col gap-3 mt-8">
+        <form className="flex flex-col gap-3 md:mt-8 mt-12">
           <input type="text" placeholder="Name *" className="z-10 input" />
           <input type="text" placeholder="Email *" className="z-10 input" />
           <input
