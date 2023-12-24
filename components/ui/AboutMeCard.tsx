@@ -31,7 +31,7 @@ const AboutMeCard = () => {
         </p>
 
         <button
-          className={`${RobotoMono.className} btn btn-white bg-gradient mt-8`}
+          className={`${RobotoMono.className} btn btn-white bg-gradient flex items-center justify-center gap-3 mt-8`}
         >
           Get my resume <HiDownload />
         </button>
