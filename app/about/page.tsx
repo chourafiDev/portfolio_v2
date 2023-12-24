@@ -29,11 +29,11 @@ const Page = () => {
               />
             </div>
 
-            <h1 className="text-lightest-slate font-semibold text-xl text-center mb-1 mt-10">
+            <h1 className="text-lightest-slate font-semibold text-xl text-center mb-1 mt-10 z-10 relative">
               Chourafi Abdelmoanime
             </h1>
             <p
-              className={`${RobotoMono.className} text-lightest-slate/60 text-[15px] text-center`}
+              className={`${RobotoMono.className} text-lightest-slate/60 text-[15px] text-center z-10 relative`}
             >
               Fullstack developer
             </p>
@@ -96,7 +96,7 @@ const Page = () => {
               className="absolute top-0 left-8 duration-300 ease-linear"
             />
 
-            <div>
+            <div className="z-10 relative">
               <p className="text-lightest-slate/60 mb-4 leading-7">
                 Hello! My name is Chourafi Abdelmonaime and I enjoy creating
                 things that live on the internet. My interest in web development
@@ -115,7 +115,7 @@ const Page = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-2 gap-4 mt-8 z-10 relative">
               <ul className="text-lightest-slate/60 bg-lightest-slate/5 p-5 rounded-30 text-sm space-y-3">
                 <li className="flex items-center gap-2">
                   <BsFillCaretRightFill className="text-green text-[10px]" />
