@@ -8,36 +8,34 @@ const Profiles = () => {
     <div className="card py-10 px-6 w-full h-full group flex flex-col justify-between">
       <Image src={bg1} alt="bg1" className="bg-card" />
 
-      <div className="">
-        <ul className="flex items-center gap-3 h-16">
-          <li className="flex-1 h-full z-10">
-            <Link
-              href="/"
-              className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
-            >
-              <FaLinkedinIn className="text-2xl" />
-            </Link>
-          </li>
-          <li className="flex-1 h-full z-10">
-            <Link
-              href="/"
-              className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
-            >
-              <FaGithub className="text-2xl" />
-            </Link>
-          </li>
-          <li className="flex-1 h-full z-10">
-            <Link
-              href="/"
-              className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
-            >
-              <FaInstagram className="text-2xl" />
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <ul className="flex items-center gap-3 h-16">
+        <li className="flex-1 h-full z-10">
+          <Link
+            href="/"
+            className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
+          >
+            <FaLinkedinIn className="text-2xl" />
+          </Link>
+        </li>
+        <li className="flex-1 h-full z-10">
+          <Link
+            href="/"
+            className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
+          >
+            <FaGithub className="text-2xl" />
+          </Link>
+        </li>
+        <li className="flex-1 h-full z-10">
+          <Link
+            href="/"
+            className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
+          >
+            <FaInstagram className="text-2xl" />
+          </Link>
+        </li>
+      </ul>
 
-      <div className="z-10">
+      <div className="z-10 md:mt-0 mt-10">
         <p className="text-lightest-slate/60 mb-1 uppercase text-xs">
           Stay with me
         </p>
