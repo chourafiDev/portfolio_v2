@@ -16,7 +16,7 @@ const Footer = () => {
         />
       </Link>
 
-      <ul className="flex items-center gap-9 uppercase font-normal text-sm">
+      <ul className="flex items-center md:gap-9 gap-6 uppercase font-normal text-sm">
         <li>
           <Link
             href="/"
@@ -52,7 +52,7 @@ const Footer = () => {
       </ul>
 
       <p
-        className={`${RobotoMono.className} text-lightest-slate/60 text-sm mt-2`}
+        className={`${RobotoMono.className} text-lightest-slate/60 text-center  leading-6 text-sm mt-2`}
       >
         &copy; All rights reserved by{" "}
         <Link href="/" className="text-green">
