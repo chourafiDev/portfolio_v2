@@ -5,11 +5,11 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Profiles = () => {
   return (
-    <div className="card py-10 px-6 w-full h-full group flex flex-col justify-between">
+    <div className="card py-10 md:px-6 px-5 w-full h-full group flex flex-col justify-between">
       <Image src={bg1} alt="bg1" className="bg-card" />
 
-      <ul className="flex items-center gap-3 h-16">
-        <li className="flex-1 h-full z-10">
+      <ul className="flex items-center justify-center gap-3 h-16">
+        <li className="w-[4rem] h-[4rem] z-10">
           <Link
             href="/"
             className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
@@ -17,7 +17,7 @@ const Profiles = () => {
             <FaLinkedinIn className="text-2xl" />
           </Link>
         </li>
-        <li className="flex-1 h-full z-10">
+        <li className="w-[4rem] h-[4rem] z-10">
           <Link
             href="/"
             className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
@@ -25,7 +25,7 @@ const Profiles = () => {
             <FaGithub className="text-2xl" />
           </Link>
         </li>
-        <li className="flex-1 h-full z-10">
+        <li className="w-[4rem] h-[4rem] z-10">
           <Link
             href="/"
             className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"

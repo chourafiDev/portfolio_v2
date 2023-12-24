@@ -4,7 +4,10 @@ import Link from "next/link";
 
 const CredentialsCard = () => {
   return (
-    <Link href="/about" className="card py-10 px-6 w-full group">
+    <Link
+      href="/about"
+      className="card flex flex-col py-10 md:px-6 px-5 w-full group"
+    >
       <Image src={bg1} alt="bg1" className="bg-card" />
 
       <Image

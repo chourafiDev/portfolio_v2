@@ -6,10 +6,13 @@ import { LuLayoutPanelLeft } from "react-icons/lu";
 
 const ServicesCard = () => {
   return (
-    <Link href="/services" className="card py-10 px-8 w-full group col-span-2">
+    <Link
+      href="/services"
+      className="card flex flex-col py-10 md:px-8 px-5 w-full h-full group"
+    >
       <Image src={bg1} alt="bg1" className="bg-card" />
 
-      <ul className="flex items-center justify-between pb-10 pt-6 px-16">
+      <ul className="flex items-center justify-between pb-10 pt-6 md:px-16 px-6">
         <li className="card w-20 h-20 flex justify-center items-center">
           <BsLayoutWtf className="text-[2rem] text-lightest-slate" />
         </li>

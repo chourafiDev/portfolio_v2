@@ -353,11 +353,15 @@ const Page = () => {
       </section>
 
       <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
-        <Profiles />
-        <div className="lg:col-span-2 col-span-1">
+        <div className="lg:order-1 order-1">
+          <Profiles />
+        </div>
+        <div className="md:col-span-2 col-span-1 lg:order-2 order-3">
           <ContactCard />
         </div>
-        <CredentialsCard />
+        <div className="lg:order-3 order-2">
+          <CredentialsCard />
+        </div>
       </section>
     </main>
   );

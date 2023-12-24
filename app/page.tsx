@@ -14,26 +14,34 @@ import ContactsInfoCard from "@/components/ui/ContactsInfoCard";
 
 export default function Home() {
   return (
-    <main className="my-16">
-      <section className="grid grid-cols-2 gap-6">
+    <main className="lg:my-16 my-10">
+      <section className="grid lg:grid-cols-2 grid-cols-1 gap-6">
         <AboutMeCard />
         <div className="space-y-6">
           <ParallaxText />
-          <div className="flex items-center gap-6">
+          <div className="flex md:flex-row flex-col items-center gap-6">
             <CredentialsCard />
             <ProjectsCard />
           </div>
         </div>
       </section>
 
-      <section className="grid grid-cols-4 gap-6 mt-8">
-        <ContactsInfoCard />
-        <ServicesCard />
-        <Profiles />
+      <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-8">
+        <div className="lg:order-1 md:order-1 order-1">
+          <ContactsInfoCard />
+        </div>
+
+        <div className="md:col-span-2 lg:order-2 md:order-3 order-2">
+          <ServicesCard />
+        </div>
+
+        <div className="lg:order-3 md:order-2 order-3">
+          <Profiles />
+        </div>
       </section>
 
-      <section className="grid grid-cols-2 gap-6 mt-8">
-        <div className="card py-10 px-6 w-full">
+      <section className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-8">
+        <div className="card py-10 md:px-6 px-5 w-full">
           <Image src={bg1} alt="bg1" className="bg-card" />
 
           <h1 className="text-lightest-slate font-semibold text-xl mb-3 z-10 relative">
@@ -50,7 +58,7 @@ export default function Home() {
             alt="hand"
             width={90}
             height={90}
-            className="absolute bottom-2 right-8 z-10 duration-300 ease-linear move"
+            className="absolute bottom-2 right-8 z-10 duration-300 ease-linear move md:block hidden"
           />
         </div>
 

@@ -6,7 +6,7 @@ const ProjectsCard = () => {
   return (
     <Link
       href="/works"
-      className="card py-10 px-6 w-full h-full group flex flex-col justify-between"
+      className="card py-10 md:px-6 px-5 w-full h-full group flex flex-col justify-between"
     >
       <Image src={bg1} alt="bg1" className="bg-card" />
 

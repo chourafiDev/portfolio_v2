@@ -6,7 +6,7 @@ const ContactCard = () => {
   return (
     <Link
       href="/contact"
-      className="card py-10 px-8 w-full h-full group flex items-end"
+      className="card py-10 md:px-8 px-5 w-full h-full group flex items-end"
     >
       <Image src={bg1} alt="bg1" className="bg-card" />
 
