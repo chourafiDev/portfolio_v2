@@ -17,10 +17,10 @@ const ContactCard = () => {
       />
 
       <div className="pt-16">
-        <h2 className="text-lightest-slate font-semibold text-4xl mb-1">
+        <h2 className="text-lightest-slate font-semibold lg:text-4xl text-3xl mb-1">
           Let&apos;s
         </h2>
-        <h2 className="text-lightest-slate font-semibold text-4xl">
+        <h2 className="text-lightest-slate font-semibold lg:text-4xl text-3xl">
           Work <span className="text-green">together</span>
         </h2>
       </div>
