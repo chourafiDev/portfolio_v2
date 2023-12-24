@@ -7,10 +7,10 @@ import { BsBoxArrowUpRight, BsCaretRight, BsGithub } from "react-icons/bs";
 
 const page = () => {
   return (
-    <main className="my-16">
-      <section className="grid grid-cols-3 gap-6">
-        <div className="space-y-6">
-          <div className="card p-5">
+    <main className="lg:my-16 my-10">
+      <section className="grid lg:grid-cols-3 grid-cols-1 md:gap-6 gap-0">
+        <div className="flex gap-6 lg:flex-col md:flex-row flex-col">
+          <div className="card w-full p-5">
             <Image src={bg1} alt="bg1" className="bg-card" />
 
             <div className="w-full h-72 rounded-30 overflow-hidden relative">
@@ -76,7 +76,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="card p-5">
+          <div className="card w-full p-5">
             <Image src={bg1} alt="bg1" className="bg-card" />
 
             <div className="w-full h-72 rounded-30 overflow-hidden relative">
@@ -137,7 +137,7 @@ const page = () => {
           </div>
         </div>
         <div className="col-span-2">
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex items-center justify-center gap-8 lg:mt-0 mt-16">
             <Image
               src={star}
               alt="star"
@@ -145,7 +145,7 @@ const page = () => {
               height={50}
               className="object-cover"
             />
-            <h2 className="font-semibold text-[3rem] text-lightest-slate">
+            <h2 className="font-semibold md:text-[3rem] text-center text-3xl text-lightest-slate">
               All Projects
             </h2>
             <Image
@@ -157,7 +157,7 @@ const page = () => {
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-6 mt-10">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-10">
             <div className="card p-5">
               <Image src={bg1} alt="bg1" className="bg-card" />
 
@@ -434,7 +434,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="card p-5 col-span-2">
+            <div className="card p-5 md:col-span-2 col-span-1">
               <Image src={bg1} alt="bg1" className="bg-card" />
 
               <div className="w-full h-72 rounded-30 overflow-hidden relative">
@@ -514,11 +514,11 @@ const page = () => {
       </section>
 
       <section className="mt-20">
-        <h2 className="text-3xl text-lightest-slate/60 font-bold text-center">
+        <h2 className="md:text-3xl text-2xl text-lightest-slate/60 font-bold text-center">
           Other Noteworthy Projects
         </h2>
 
-        <div className="flex gap-6 mt-8">
+        <div className="flex md:flex-row flex-col gap-6 mt-8">
           <div className="card p-6">
             <Image src={bg1} alt="bg1" className="bg-card" />
             <div className="relative z-10">
@@ -530,7 +530,7 @@ const page = () => {
                 for state management
               </p>
               <ul
-                className={`${RobotoMono.className} flex gap-6 text-lightest-slate/30 text-[13px] mt-3`}
+                className={`${RobotoMono.className} flex flex-wrap lg:gap-6 gap-3 text-lightest-slate/30 text-[13px] lg:mt-3 mt-6`}
               >
                 <li>React.js</li>
                 <li>Styled Components</li>
@@ -573,7 +573,7 @@ const page = () => {
                 of most cities in the world
               </p>
               <ul
-                className={`${RobotoMono.className} flex gap-6 text-lightest-slate/30 text-[13px] mt-3`}
+                className={`${RobotoMono.className} flex flex-wrap lg:gap-6 gap-3 text-lightest-slate/30 text-[13px] lg:mt-3 mt-6`}
               >
                 <li>Next.js</li>
                 <li>Open Weather api</li>
