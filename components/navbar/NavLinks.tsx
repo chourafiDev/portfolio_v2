@@ -3,7 +3,7 @@ import React from "react";
 
 const NavLinks = () => {
   return (
-    <ul className="flex items-center gap-12 font-normal text-sm">
+    <ul className="lg:flex hidden items-center gap-12 font-normal text-sm">
       <li>
         <Link href="/" className="text-lightest-slate">
           <span className="text-green">01.</span> Home
