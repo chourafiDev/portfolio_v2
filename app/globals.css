@@ -28,7 +28,7 @@
   }
 
   .about-me {
-    @apply relative w-full h-[250px] before:absolute before:group-hover:top-0 before:group-hover:left-0 before:bg-green before:rounded-tl-[30px] before:rounded-br-[40px] before:w-full before:h-full before:-top-3 before:-left-3 before:content-[''] before:duration-200 before:ease-linear;
+    @apply relative w-full h-[250px] before:absolute before:group-hover:top-0 before:group-hover:left-0 before:bg-green before:rounded-tl-[30px] before:rounded-br-[40px] before:w-full before:h-full md:before:-top-3 before:-top-2 md:before:-left-3 before:-left-2 before:content-[''] before:duration-200 before:ease-linear;
   }
 }
 
