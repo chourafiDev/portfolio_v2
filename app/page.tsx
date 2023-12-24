@@ -33,13 +33,13 @@ export default function Home() {
       </section>
 
       <section className="grid grid-cols-2 gap-6 mt-8">
-        <Link href="/" className="card py-10 px-6 w-full">
+        <div className="card py-10 px-6 w-full">
           <Image src={bg1} alt="bg1" className="bg-card" />
 
-          <h1 className="text-lightest-slate font-semibold text-xl mb-3">
+          <h1 className="text-lightest-slate font-semibold text-xl mb-3 z-10 relative">
             Get In Touch
           </h1>
-          <p className="text-lightest-slate/60 text-[15px] leading-6">
+          <p className="text-lightest-slate/60 text-[15px] leading-6 z-10 relative">
             Although I’m not currently looking for any new opportunities, my
             inbox is always open. Whether you have a question or just want to
             say hi, I’ll try my best to get back to you!
@@ -52,7 +52,7 @@ export default function Home() {
             height={90}
             className="absolute bottom-2 right-8 z-10 duration-300 ease-linear move"
           />
-        </Link>
+        </div>
 
         <ContactCard />
       </section>
