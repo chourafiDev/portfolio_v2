@@ -45,7 +45,7 @@ const Profiles = () => {
       </div>
 
       <Link
-        href="/"
+        href="/contact"
         className="absolute bottom-10 right-8 z-10 opacity-20 group-hover:opacity-100 duration-300 ease-linear"
       >
         <Image src={icon1} alt="icon1" />

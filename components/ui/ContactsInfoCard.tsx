@@ -40,11 +40,12 @@ const ContactsInfoCard = () => {
         <p className="text-lightest-slate font-semibold text-xl">Contacts</p>
       </div>
 
-      <Image
-        src={icon1}
-        alt="icon1"
-        className="absolute bottom-10 right-8 opacity-20 group-hover:opacity-100 duration-300 ease-linear"
-      />
+      <Link
+        href="/contact"
+        className="absolute bottom-10 right-8 z-10 opacity-20 group-hover:opacity-100 duration-300 ease-linear"
+      >
+        <Image src={icon1} alt="icon1" />
+      </Link>
     </div>
   );
 };
