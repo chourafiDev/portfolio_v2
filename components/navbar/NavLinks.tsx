@@ -1,38 +1,17 @@
+import { navItems } from "@/utils/data";
 import Link from "next/link";
 import React from "react";
 
 const NavLinks = () => {
   return (
     <ul className="lg:flex hidden items-center gap-12 font-normal text-sm">
-      <li>
-        <Link href="/" className="text-lightest-slate">
-          <span className="text-green">01.</span> Home
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/about"
-          className="text-lightest-slate/60 hover:text-lightest-slate duration-300 ease-linear"
-        >
-          <span className="text-green">02.</span> About
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/works"
-          className="text-lightest-slate/60 hover:text-lightest-slate duration-300 ease-linear"
-        >
-          <span className="text-green">03.</span> Works
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/contact"
-          className="text-lightest-slate/60 hover:text-lightest-slate duration-300 ease-linear"
-        >
-          <span className="text-green">04.</span> Contact
-        </Link>
-      </li>
+      {navItems.map(({ title, href }, i) => (
+        <li key={title}>
+          <Link href={href} className="text-lightest-slate/60">
+            <span className="text-green">0{i + 1}.</span> {title}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 };
