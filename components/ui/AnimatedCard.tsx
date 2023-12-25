@@ -3,14 +3,19 @@
 import { motion } from "framer-motion";
 import { zoomIn } from "@/utils/anim";
 
-const AnimatedCard = ({ children }: { children: React.ReactNode }) => {
+type AnimatedCardProps = {
+  children: React.ReactNode;
+  styles?: string;
+};
+
+const AnimatedCard = ({ children, styles }: AnimatedCardProps) => {
   return (
     <motion.div
       variants={zoomIn(0.3)}
       initial="hidden"
-      animate="show"
-      exit="hidden"
-      className="w-full"
+      whileInView="show"
+      viewport={{ once: true }}
+      className={styles}
     >
       {children}
     </motion.div>
