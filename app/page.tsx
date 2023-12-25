@@ -58,7 +58,7 @@ export default function Home() {
             alt="hand"
             width={90}
             height={90}
-            className="absolute bottom-2 right-8 z-10 duration-300 ease-linear move md:block hidden"
+            className="absolute bottom-2 right-8 z-10 duration-300 ease-linear move-leftRight md:block hidden"
           />
         </div>
 
