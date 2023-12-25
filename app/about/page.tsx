@@ -37,7 +37,7 @@ const Page = () => {
               <p
                 className={`${RobotoMono.className} text-lightest-slate/60 text-[15px] text-center z-10 relative`}
               >
-                Fullstack developer
+                Full Stack Developer
               </p>
 
               <ul className="flex items-center justify-center gap-3 h-16 md:px-10 px-6 mt-6">
@@ -105,16 +105,14 @@ const Page = () => {
 
               <div className="z-10 relative">
                 <p className="text-lightest-slate/60 mb-4 leading-7">
-                  Hello! My name is Chourafi Abdelmonaime and I enjoy creating
-                  things that live on the internet. My interest in web
-                  development started back in 2020 when I tried creating
-                  templates with HTML and CSS!
-                </p>
-
-                <p className="text-lightest-slate/60 mb-4 leading-7">
-                  My passion is learning all possible things about web
-                  development and helping people to fix their problems on the
-                  internet
+                  👋 Hello, I&apos;m Abdelmonaime Chourafi, a Full Stack Web and
+                  Mobile Developer who embarked on this coding journey in 2020.
+                  Passionate about transforming innovative ideas into functional
+                  and captivating digital solutions, I specialize in both web
+                  and mobile development. With a focus on continuous learning, I
+                  stay at the forefront of technology trends. Beyond coding, I
+                  believe in the power of technology to create meaningful and
+                  impactful digital experiences.
                 </p>
 
                 <p className="text-lightest-slate/60 leading-7">
@@ -169,17 +167,17 @@ const Page = () => {
               </h2>
               <div className="mt-6">
                 <p className="text-lightest-slate/60 text-base mb-1 font-normal">
-                  2024 - Present
+                  2022 - Present
                 </p>
                 <h3 className={`${RobotoMono.className} text-green text-base`}>
-                  Frontend developer
+                  Frontend web/mobile developer
                 </h3>
                 <p className="text-lightest-slate/60 font-normal text-[15px] mt-3">
-                  Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                  urna, porttitor rhoncus dolor purus non enim praesent in
-                  elementum sahas facilisis leo, vel fringilla est ullamcorper
-                  eget nulla facilisi etisam dignissim diam quis enim lobortis
-                  viverra orci sagittis eu volutpat odio facilisis mauris sit.
+                  🌐 Currently, I&apos;m immersed in the world of web and mobile
+                  development, serving as a Frontend Developer in a dynamic
+                  company since 2022. I find immense joy in translating design
+                  concepts into captivating user interfaces, ensuring a seamless
+                  and engaging experience across digital platforms.
                 </p>
               </div>
 
@@ -188,14 +186,15 @@ const Page = () => {
                   2021 - 2022
                 </p>
                 <h3 className={`${RobotoMono.className} text-green text-base`}>
-                  Fullstack web developer
+                  Full Stack web developer
                 </h3>
                 <p className="text-lightest-slate/60 font-normal text-[15px] mt-3">
-                  Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                  urna, porttitor rhoncus dolor purus non enim praesent in
-                  elementum sahas facilisis leo, vel fringilla est ullamcorper
-                  eget nulla facilisi etisam dignissim diam quis enim lobortis
-                  viverra orci sagittis eu volutpat odio facilisis mauris sit.
+                  💻 Having served as a Full Stack Web Developer, my journey
+                  from 2021 to 2022 was a dynamic exploration of the digital
+                  realm. This role allowed me to seamlessly integrate front-end
+                  aesthetics with back-end functionality, creating cohesive and
+                  impactful web solutions. From crafting engaging user
+                  interfaces to optimizing server-side processes.
                 </p>
               </div>
             </div>
