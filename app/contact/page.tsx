@@ -5,11 +5,12 @@ import React from "react";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { BsHandIndexThumb } from "react-icons/bs";
+import AnimatedCard from "@/components/ui/AnimatedCard";
 
 const page = () => {
   return (
     <main className="lg:my-16 my-10 grid lg:grid-cols-3 grid-cols-1 gap-12">
-      <div className="lg:space-y-20 space-y-10">
+      <AnimatedCard styles="lg:space-y-20 space-y-10">
         <div>
           <h5 className="text-lightest-slate font-semibold md:text-lg text-base uppercase">
             Contact info
@@ -71,15 +72,16 @@ const page = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="lg:col-span-2 col-span-1 card md:p-8 p-4 lg:mt-0 mt-10">
+      </AnimatedCard>
+
+      <AnimatedCard styles="lg:col-span-2 col-span-1 card md:p-8 p-4 lg:mt-0 mt-10">
         <Image
           src={icon2}
           alt="icon2"
           className="absolute top-0 right-10 duration-300 ease-linear"
         />
 
-        <h1 className="text-lightest-slate md:text-4xl text-2xl font-medium">
+        <h1 className="text-lightest-slate md:text-4xl text-2xl font-medium z-10 relative">
           Let’s work <span className="text-green">together.</span>
         </h1>
 
@@ -100,7 +102,7 @@ const page = () => {
             Send Message
           </button>
         </form>
-      </div>
+      </AnimatedCard>
     </main>
   );
 };
