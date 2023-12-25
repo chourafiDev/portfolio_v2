@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <main className="lg:my-16 my-10 grid lg:grid-cols-3 grid-cols-1 gap-12">
-      <AnimatedCard styles="lg:space-y-20 space-y-10">
-        <div>
+      <div className="lg:space-y-20 space-y-10">
+        <AnimatedCard>
           <h5 className="text-lightest-slate font-semibold md:text-lg text-base uppercase">
             Contact info
           </h5>
@@ -44,8 +44,9 @@ const page = () => {
               </div>
             </li>
           </ul>
-        </div>
-        <div>
+        </AnimatedCard>
+
+        <AnimatedCard>
           <h5 className="text-lightest-slate font-semibold md:text-lg text-base uppercase flex items-center gap-3">
             I&apos;m On{" "}
             <BsHandIndexThumb className="rotate-180 text-lightest-slate/40" />
@@ -53,7 +54,8 @@ const page = () => {
           <ul className="flex items-center gap-3 h-16 mt-8">
             <li className="md:w-[4rem] md:h-[4rem] w-16 h-16 z-10">
               <Link
-                href="/"
+                target="_blank"
+                href="https://www.linkedin.com/in/abdelmonaime-chourafi-1913961b2/"
                 className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
               >
                 <FaLinkedinIn className="text-2xl" />
@@ -61,7 +63,8 @@ const page = () => {
             </li>
             <li className="md:w-[4rem] md:h-[4rem] w-16 h-16 z-10">
               <Link
-                href="/"
+                target="_blank"
+                href="https://github.com/chourafiDev"
                 className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
               >
                 <FaGithub className="text-2xl" />
@@ -69,15 +72,16 @@ const page = () => {
             </li>
             <li className="md:w-[4rem] md:h-[4rem] w-16 h-16 z-10">
               <Link
-                href="/"
+                target="_blank"
+                href="https://www.instagram.com/chourafi_abdelmonaime/?hl=en"
                 className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
               >
                 <FaInstagram className="text-2xl" />
               </Link>
             </li>
           </ul>
-        </div>
-      </AnimatedCard>
+        </AnimatedCard>
+      </div>
 
       <AnimatedCard styles="lg:col-span-2 col-span-1 card md:p-8 p-4 lg:mt-0 mt-10">
         <Image
