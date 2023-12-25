@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NavContact = () => {
   return (
-    <Link href="/contact" className="btn btn-white bg-gradient md:flex hidden">
+    <Link href="/contact" className="btn btn-white bg-gradient lg:flex hidden">
       Let&apos;s talk
     </Link>
   );
