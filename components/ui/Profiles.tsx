@@ -11,7 +11,8 @@ const Profiles = () => {
       <ul className="flex items-center justify-center gap-3 h-16">
         <li className="w-[4rem] h-[4rem] z-10">
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.linkedin.com/in/abdelmonaime-chourafi-1913961b2/"
             className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
           >
             <FaLinkedinIn className="text-2xl" />
@@ -19,7 +20,8 @@ const Profiles = () => {
         </li>
         <li className="w-[4rem] h-[4rem] z-10">
           <Link
-            href="/"
+            target="_blank"
+            href="https://github.com/chourafiDev"
             className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
           >
             <FaGithub className="text-2xl" />
@@ -27,7 +29,8 @@ const Profiles = () => {
         </li>
         <li className="w-[4rem] h-[4rem] z-10">
           <Link
-            href="/"
+            target="_blank"
+            href="https://www.instagram.com/chourafi_abdelmonaime/?hl=en"
             className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
           >
             <FaInstagram className="text-2xl" />
