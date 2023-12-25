@@ -4,10 +4,15 @@ import CredentialsCard from "@/components/ui/CredentialsCard";
 import Profiles from "@/components/ui/Profiles";
 import { bg1, icon2, star } from "@/utils/assets";
 import { RobotoMono } from "@/utils/fonts";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 import { BsCodeSlash, BsLayoutWtf } from "react-icons/bs";
 import { LuLayoutPanelLeft } from "react-icons/lu";
+
+export const metadata: Metadata = {
+  title: "Chourafidev | Services",
+};
 
 const page = () => {
   return (

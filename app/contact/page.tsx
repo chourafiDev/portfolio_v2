@@ -6,6 +6,11 @@ import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
 import { BsHandIndexThumb } from "react-icons/bs";
 import AnimatedCard from "@/components/ui/AnimatedCard";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Chourafidev | Contact Me",
+};
 
 const page = () => {
   return (

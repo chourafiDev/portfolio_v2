@@ -1,10 +1,15 @@
 import AnimatedCard from "@/components/ui/AnimatedCard";
 import { bg1, person4, star } from "@/utils/assets";
 import { RobotoMono } from "@/utils/fonts";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { BsBoxArrowUpRight, BsCaretRight, BsGithub } from "react-icons/bs";
+
+export const metadata: Metadata = {
+  title: "Chourafidev | Projects",
+};
 
 const page = () => {
   return (
