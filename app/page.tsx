@@ -1,6 +1,5 @@
 import { bg1, hand } from "@/utils/assets";
 import Image from "next/image";
-import Link from "next/link";
 
 // Components
 import AboutMeCard from "@/components/ui/AboutMeCard";
@@ -11,17 +10,26 @@ import ProjectsCard from "@/components/ui/ProjectsCard";
 import CredentialsCard from "@/components/ui/CredentialsCard";
 import ServicesCard from "@/components/ui/ServicesCard";
 import ContactsInfoCard from "@/components/ui/ContactsInfoCard";
+import AnimatedCard from "@/components/ui/AnimatedCard";
 
 export default function Home() {
   return (
     <main className="lg:my-16 my-10">
       <section className="grid lg:grid-cols-2 grid-cols-1 gap-6">
-        <AboutMeCard />
+        <AnimatedCard>
+          <AboutMeCard />
+        </AnimatedCard>
         <div className="space-y-6">
-          <ParallaxText />
+          <AnimatedCard>
+            <ParallaxText />
+          </AnimatedCard>
           <div className="flex md:flex-row flex-col items-center gap-6">
-            <CredentialsCard />
-            <ProjectsCard />
+            <AnimatedCard>
+              <CredentialsCard />
+            </AnimatedCard>
+            <AnimatedCard>
+              <ProjectsCard />
+            </AnimatedCard>
           </div>
         </div>
       </section>
