@@ -12,7 +12,7 @@
   }
 
   .btn {
-    @apply px-8 py-3 font-medium rounded-2xl text-base flex items-center justify-center gap-3;
+    @apply px-8 py-3 font-medium rounded-2xl text-base;
   }
 
   .btn-white {
@@ -87,16 +87,27 @@ html {
   opacity: 0.25;
 }
 
-.move {
-  animation: hand-animation 1.5s linear infinite alternate;
+.move-leftRight {
+  animation: leftRight-animation 1.5s linear infinite alternate;
+}
+.move-updown {
+  animation: updown-animation 1.5s linear infinite alternate;
 }
 
-@keyframes hand-animation {
+@keyframes leftRight-animation {
   0% {
     transform: translateX(20px);
   }
   100% {
     transform: translateX(0px);
+  }
+}
+@keyframes updown-animation {
+  0% {
+    transform: translateY(16px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 
