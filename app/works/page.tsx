@@ -166,8 +166,8 @@ const page = () => {
             </div>
           </AnimatedCard>
 
-          <AnimatedCard>
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-10">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-10">
+            <AnimatedCard>
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
@@ -238,7 +238,9 @@ const page = () => {
                   </ul>
                 </div>
               </div>
+            </AnimatedCard>
 
+            <AnimatedCard>
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
@@ -303,7 +305,9 @@ const page = () => {
                   </ul>
                 </div>
               </div>
+            </AnimatedCard>
 
+            <AnimatedCard>
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
@@ -371,7 +375,9 @@ const page = () => {
                   </ul>
                 </div>
               </div>
+            </AnimatedCard>
 
+            <AnimatedCard>
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
@@ -444,84 +450,84 @@ const page = () => {
                   </ul>
                 </div>
               </div>
+            </AnimatedCard>
 
-              <div className="card p-5 md:col-span-2 col-span-1">
-                <Image src={bg1} alt="bg1" className="bg-card" />
+            <AnimatedCard styles="card p-5 md:col-span-2 col-span-1">
+              <Image src={bg1} alt="bg1" className="bg-card" />
 
-                <div className="w-full h-72 rounded-30 overflow-hidden relative">
-                  <Image
-                    src={person4}
-                    alt="person4"
-                    fill
-                    className="absolute object-cover"
-                  />
-                </div>
-
-                <div className="z-10 relative">
-                  <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
-                    POS (Point of sale system) app
-                  </h1>
-                  <p
-                    className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
-                  >
-                    Technologies:
-                  </p>
-
-                  <ul
-                    className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
-                  >
-                    <li className="flex items-center gap-1 mr-3 mb-1">
-                      <BsCaretRight className="text-green text-[12px] " />
-                      Next.js
-                    </li>
-                    <li className="flex items-center gap-1 mr-3 mb-1">
-                      <BsCaretRight className="text-green text-[12px] " />
-                      Next auth
-                    </li>
-                    <li className="flex items-center gap-1 mr-3 mb-1">
-                      <BsCaretRight className="text-green text-[12px] " />
-                      Typescript
-                    </li>
-                    <li className="flex items-center gap-1 mr-3 mb-1">
-                      <BsCaretRight className="text-green text-[12px] " />
-                      Tailwindcss
-                    </li>
-                    <li className="flex items-center gap-1 mr-3 mb-1">
-                      <BsCaretRight className="text-green text-[12px] " />
-                      Node.js (Express.js)
-                    </li>
-                    <li className="flex items-center gap-1 mr-3 mb-1">
-                      <BsCaretRight className="text-green text-[12px] " />
-                      MongoDb
-                    </li>
-                  </ul>
-
-                  <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
-                    <li>
-                      <Link
-                        href="https://github.com/chourafiDev/POS_RESTAURANT_UI"
-                        legacyBehavior
-                      >
-                        <a target="_blank" rel="noreferrer">
-                          <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="https://pos-restaurant-ui.vercel.app/en/dashboard"
-                        legacyBehavior
-                      >
-                        <a target="_blank" rel="noreferrer">
-                          <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
-                        </a>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
+              <div className="w-full h-72 rounded-30 overflow-hidden relative">
+                <Image
+                  src={person4}
+                  alt="person4"
+                  fill
+                  className="absolute object-cover"
+                />
               </div>
-            </div>
-          </AnimatedCard>
+
+              <div className="z-10 relative">
+                <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
+                  POS (Point of sale system) app
+                </h1>
+                <p
+                  className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
+                >
+                  Technologies:
+                </p>
+
+                <ul
+                  className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
+                >
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    Next.js
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    Next auth
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    Typescript
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    Tailwindcss
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    Node.js (Express.js)
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    MongoDb
+                  </li>
+                </ul>
+
+                <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
+                  <li>
+                    <Link
+                      href="https://github.com/chourafiDev/POS_RESTAURANT_UI"
+                      legacyBehavior
+                    >
+                      <a target="_blank" rel="noreferrer">
+                        <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://pos-restaurant-ui.vercel.app/en/dashboard"
+                      legacyBehavior
+                    >
+                      <a target="_blank" rel="noreferrer">
+                        <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </AnimatedCard>
+          </div>
         </div>
       </section>
 
