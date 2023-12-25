@@ -18,7 +18,7 @@ const AboutMeCard = () => {
       </div>
 
       <div className="z-10">
-        <p className="text-green mb-2 text-sm">Hi, my name is</p>
+        <p className="text-green mb-2 text-sm">👋 Hi, my name is</p>
         <h1 className="text-lightest-slate text-3xl font-bold mb-[.5px]">
           Chourafi
         </h1>
@@ -26,7 +26,7 @@ const AboutMeCard = () => {
           Abdelmonaime.
         </h1>
         <p className="text-lightest-slate/60 mt-4 text-sm">
-          I&apos;m a fullstack developer and I build things for the web.
+          Passionate Full Stack Web and Mobile Developer.
         </p>
 
         <button
