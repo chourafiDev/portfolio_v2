@@ -1,12 +1,11 @@
 import { bg1, person4 } from "@/utils/assets";
 import { RobotoMono } from "@/utils/fonts";
 import Image from "next/image";
-import React from "react";
 import { HiDownload } from "react-icons/hi";
 
 const AboutMeCard = () => {
   return (
-    <div className="card md:p-10 p-5 w-full flex md:flex-row flex-col items-center gap-10 group">
+    <div className="card md:p-10 p-5 w-full h-full flex md:flex-row flex-col items-center gap-10 group">
       <Image src={bg1} alt="bg1" className="bg-card" />
 
       <div className="about-me">
