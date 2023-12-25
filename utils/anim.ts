@@ -23,3 +23,23 @@ export const scale = {
   open: { scale: 1, transition: { duration: 0.3 } },
   closed: { scale: 0, transition: { duration: 0.4 } },
 };
+
+export const zoomIn = (delay: number) => {
+  const zoomAmount = 0.2;
+  return {
+    hidden: {
+      scale: 1 - zoomAmount,
+      opacity: 0,
+    },
+    show: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        type: "tween",
+        duration: 1.2,
+        delay: delay,
+        ease: [0.25, 0.25, 0.25, 0.75],
+      },
+    },
+  };
+};
