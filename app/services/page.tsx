@@ -22,7 +22,7 @@ const page = () => {
           <div className="card h-96">
             <Image src={bg1} alt="bg1" className="bg-card" />
 
-            <ul className="flex flex-col lg:h-full h-full justify-between md:px-16 px-8 lg:py-20 py-14">
+            <ul className="flex flex-col lg:h-full h-full justify-between md:px-10 px-6 lg:py-20 py-14">
               <li className="flex items-center gap-6 z-10">
                 <BsLayoutWtf className="text-[2rem] text-lightest-slate" />
                 <p className="text-lightest-slate font-medium text-lg">
@@ -32,13 +32,13 @@ const page = () => {
               <li className="flex items-center gap-6 z-10">
                 <LuLayoutPanelLeft className="text-[2rem] text-lightest-slate" />
                 <p className="text-lightest-slate font-medium text-lg">
-                  MOBILE DESIGNING
+                  MOBILE DEVELOPMENT
                 </p>
               </li>
               <li className="flex items-center gap-6 z-10">
                 <BsCodeSlash className="text-[2rem] text-lightest-slate" />
                 <p className="text-lightest-slate font-medium text-lg">
-                  DEVELOPMENT
+                  WEB DEVELOPMENT
                 </p>
               </li>
             </ul>
@@ -84,10 +84,12 @@ const page = () => {
                     WEB DESIGNING
                   </h1>
                   <p className="text-lightest-slate mt-3 leading-6 text-[15px] z-20 relative">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor asna rhoncus dolor purus non enim aberitin
-                    praesent in elementum sahas facilisis leo, vel fringilla est
-                    etisam dignissim.
+                    Elevate your online presence with my personalized web design
+                    service. I&apos;m committed to creating visually stunning
+                    and functional websites tailored to your unique needs.
+                    Whether you&apos;re a startup or an individual looking to
+                    make a mark on the web, I&apos;m here to transform your
+                    ideas into a captivating digital reality.
                   </p>
                 </div>
                 <div className="card p-4">
@@ -95,13 +97,16 @@ const page = () => {
                   <h1
                     className={`${RobotoMono.className} text-lightest-slate/40 font-semibold z-20 relative`}
                   >
-                    MOBILE DESIGNING
+                    MOBILE DEVELOPMENT
                   </h1>
                   <p className="text-lightest-slate mt-3 leading-6 text-[15px] z-20 relative">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor asna rhoncus dolor purus non enim aberitin
-                    praesent in elementum sahas facilisis leo, vel fringilla est
-                    etisam dignissim.
+                    Optimize your digital experience with my mobile development
+                    expertise. I specialize in crafting high-performance mobile
+                    applications that seamlessly blend functionality with an
+                    intuitive user interface. Whether you&apos;re an
+                    entrepreneur or an individual seeking a custom app, I&apos;m
+                    here to transform your ideas into a sleek and responsive
+                    mobile reality.
                   </p>
                 </div>
                 <div className="card p-4 md:col-span-2 col-span-1">
@@ -109,13 +114,17 @@ const page = () => {
                   <h1
                     className={`${RobotoMono.className} text-lightest-slate/40 font-semibold z-20 relative`}
                   >
-                    DEVELOPMENT
+                    WEB DEVELOPMENT
                   </h1>
                   <p className="text-lightest-slate mt-3 leading-6 text-[15px] z-20 relative">
-                    Sit amet luctussd fav venenatis, lectus magna fringilla inis
-                    urna, porttitor asna rhoncus dolor purus non enim aberitin
-                    praesent in elementum sahas facilisis leo, vel fringilla est
-                    etisam dignissim.
+                    Supercharge your online presence with my web development
+                    expertise. I specialize in creating dynamic and feature-rich
+                    websites that cater to your unique needs. From responsive
+                    design to interactive functionality, I focus on delivering a
+                    seamless user experience. Whether you&apos;re a startup or
+                    an individual looking to enhance your digital footprint,
+                    I&apos;m here to turn your web development aspirations into
+                    reality.
                   </p>
                 </div>
               </div>
