@@ -75,7 +75,7 @@ const Page = () => {
 
         <div className="col-span-2">
           <AnimatedCard>
-            <div className="flex items-center justify-center gap-8 lg:mt-0 mt-16">
+            <div className="flex items-center justify-center md:gap-8 gap-4 lg:mt-0 mt-16">
               <Image
                 src={star}
                 alt="star"
