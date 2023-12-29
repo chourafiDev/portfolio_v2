@@ -1,5 +1,16 @@
 import AnimatedCard from "@/components/ui/AnimatedCard";
-import { bg1, person4, star } from "@/utils/assets";
+import {
+  bg1,
+  blog,
+  booking,
+  nftMarketplace,
+  person4,
+  pos,
+  schoolManagement,
+  star,
+  tiktok,
+  travel,
+} from "@/utils/assets";
 import { RobotoMono } from "@/utils/fonts";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -15,137 +26,156 @@ const page = () => {
   return (
     <main className="lg:my-16 my-10">
       <section className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-0">
-        <AnimatedCard styles="flex gap-6 lg:flex-col md:flex-row flex-col lg:order-1 order-2 lg:mt-0 mt-8">
-          <div className="card w-full p-5">
-            <Image src={bg1} alt="bg1" className="bg-card" />
+        <div className="flex gap-6 lg:flex-col md:flex-row flex-col lg:order-1 order-2 lg:mt-0 mt-8">
+          <AnimatedCard>
+            <div className="card w-full p-5">
+              <Image src={bg1} alt="bg1" className="bg-card" />
 
-            <div className="w-full h-72 rounded-30 overflow-hidden relative">
-              <Image
-                src={person4}
-                alt="person4"
-                fill
-                className="absolute object-cover"
-              />
-            </div>
-
-            <div className="z-10 relative">
-              <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
-                School management
-              </h1>
-              <p
-                className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
+              <Link
+                href="https://yanerp-app.vercel.app/admin/dashboard"
+                target="_blank"
+                className="relative z-10"
               >
-                Technologies:
-              </p>
+                <div className="w-full h-56 rounded-30 overflow-hidden relative group">
+                  <div className="absolute top-0 left-0 w-full h-full bg-green/20 z-10 group-hover:bg-transparent duration-500 ease-linear"></div>
+                  <Image
+                    src={schoolManagement}
+                    alt="school-management"
+                    fill
+                    className="absolute object-fill"
+                  />
+                </div>
+              </Link>
 
-              <ul
-                className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
-              >
-                <li className="flex items-center gap-1 mr-3 mb-1">
-                  <BsCaretRight className="text-green text-[12px] " />
-                  Next.js
-                </li>
-                <li className="flex items-center gap-1 mr-3 mb-1">
-                  <BsCaretRight className="text-green text-[12px] " /> Next-auth
-                </li>
-                <li className="flex items-center gap-1 mr-3 mb-1">
-                  <BsCaretRight className="text-green text-[12px] " /> MongoDb
-                </li>
-                <li className="flex items-center gap-1 mr-3 mb-1">
-                  <BsCaretRight className="text-green text-[12px] " /> Ant
-                  Design
-                </li>
-              </ul>
+              <div className="z-10 relative">
+                <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
+                  School management
+                </h1>
+                <p
+                  className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
+                >
+                  Technologies:
+                </p>
 
-              <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
-                <li>
-                  <Link
-                    href="https://github.com/chourafiDev/school-managment-app"
-                    legacyBehavior
-                  >
-                    <a target="_blank" rel="noreferrer">
-                      <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://yanerp-app.vercel.app/admin/dashboard"
-                    legacyBehavior
-                  >
-                    <a target="_blank" rel="noreferrer">
-                      <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+                <ul
+                  className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
+                >
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    Next.js
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />{" "}
+                    Next-auth
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " /> MongoDb
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " /> Ant
+                    Design
+                  </li>
+                </ul>
+
+                <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
+                  <li>
+                    <Link
+                      href="https://github.com/chourafiDev/school-managment-app"
+                      legacyBehavior
+                    >
+                      <a target="_blank" rel="noreferrer">
+                        <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://yanerp-app.vercel.app/admin/dashboard"
+                      legacyBehavior
+                    >
+                      <a target="_blank" rel="noreferrer">
+                        <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </AnimatedCard>
 
-          <div className="card w-full p-5">
-            <Image src={bg1} alt="bg1" className="bg-card" />
+          <AnimatedCard>
+            <div className="card w-full p-5">
+              <Image src={bg1} alt="bg1" className="bg-card" />
 
-            <div className="w-full h-72 rounded-30 overflow-hidden relative">
-              <Image
-                src={person4}
-                alt="person4"
-                fill
-                className="absolute object-cover"
-              />
-            </div>
-
-            <div className="z-10 relative">
-              <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
-                NFT marketplace
-              </h1>
-              <p
-                className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
+              <Link
+                href="https://nft-marketplace-five-alpha.vercel.app"
+                target="_blank"
+                className="relative z-10"
               >
-                Technologies:
-              </p>
+                <div className="w-full h-56 rounded-30 overflow-hidden relative group">
+                  <div className="absolute top-0 left-0 w-full h-full bg-green/20 z-10 group-hover:bg-transparent duration-500 ease-linear"></div>
+                  <Image
+                    src={nftMarketplace}
+                    alt="nft-marketplace"
+                    fill
+                    className="absolute object-fill"
+                  />
+                </div>
+              </Link>
 
-              <ul
-                className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
-              >
-                <li className="flex items-center gap-1 mr-3 mb-1">
-                  <BsCaretRight className="text-green text-[12px] " />
-                  Next.js
-                </li>
-                <li className="flex items-center gap-1 mr-3 mb-1">
-                  <BsCaretRight className="text-green text-[12px] " />{" "}
-                  Tailwindcss
-                </li>
-              </ul>
+              <div className="z-10 relative">
+                <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
+                  NFT marketplace
+                </h1>
+                <p
+                  className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
+                >
+                  Technologies:
+                </p>
 
-              <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
-                <li>
-                  <Link
-                    href="https://github.com/chourafiDev/nft-marketplace"
-                    legacyBehavior
-                  >
-                    <a target="_blank" rel="noreferrer">
-                      <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://nft-marketplace-five-alpha.vercel.app"
-                    legacyBehavior
-                  >
-                    <a target="_blank" rel="noreferrer">
-                      <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
-                    </a>
-                  </Link>
-                </li>
-              </ul>
+                <ul
+                  className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
+                >
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />
+                    Next.js
+                  </li>
+                  <li className="flex items-center gap-1 mr-3 mb-1">
+                    <BsCaretRight className="text-green text-[12px] " />{" "}
+                    Tailwindcss
+                  </li>
+                </ul>
+
+                <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
+                  <li>
+                    <Link
+                      href="https://github.com/chourafiDev/nft-marketplace"
+                      legacyBehavior
+                    >
+                      <a target="_blank" rel="noreferrer">
+                        <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
+                      </a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://nft-marketplace-five-alpha.vercel.app"
+                      legacyBehavior
+                    >
+                      <a target="_blank" rel="noreferrer">
+                        <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </AnimatedCard>
+          </AnimatedCard>
+        </div>
 
         <div className="col-span-2 lg:order-2 order-1">
           <AnimatedCard>
-            <div className="flex items-center justify-center gap-8">
+            <div className="flex items-center justify-center md:gap-8 gap-4">
               <Image
                 src={star}
                 alt="star"
@@ -171,14 +201,21 @@ const page = () => {
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
-                <div className="w-full h-72 rounded-30 overflow-hidden relative">
-                  <Image
-                    src={person4}
-                    alt="person4"
-                    fill
-                    className="absolute object-cover"
-                  />
-                </div>
+                <Link
+                  href="http://bookingrooms.herokuapp.com"
+                  target="_blank"
+                  className="relative z-10"
+                >
+                  <div className="w-full h-56 rounded-30 overflow-hidden relative group">
+                    <div className="absolute top-0 left-0 w-full h-full bg-green/20 z-10 group-hover:bg-transparent duration-500 ease-linear"></div>
+                    <Image
+                      src={booking}
+                      alt="booking"
+                      fill
+                      className="absolute object-fill"
+                    />
+                  </div>
+                </Link>
 
                 <div className="z-10 relative">
                   <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
@@ -244,14 +281,21 @@ const page = () => {
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
-                <div className="w-full h-72 rounded-30 overflow-hidden relative">
-                  <Image
-                    src={person4}
-                    alt="person4"
-                    fill
-                    className="absolute object-cover"
-                  />
-                </div>
+                <Link
+                  href="https://videoly.vercel.app/"
+                  target="_blank"
+                  className="relative z-10"
+                >
+                  <div className="w-full h-56 rounded-30 overflow-hidden relative group">
+                    <div className="absolute top-0 left-0 w-full h-full bg-green/20 z-10 group-hover:bg-transparent duration-500 ease-linear"></div>
+                    <Image
+                      src={tiktok}
+                      alt="tiktok"
+                      fill
+                      className="absolute object-fill"
+                    />
+                  </div>
+                </Link>
 
                 <div className="z-10 relative">
                   <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
@@ -311,14 +355,21 @@ const page = () => {
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
-                <div className="w-full h-72 rounded-30 overflow-hidden relative">
-                  <Image
-                    src={person4}
-                    alt="person4"
-                    fill
-                    className="absolute object-cover"
-                  />
-                </div>
+                <Link
+                  href="https://elite-travel.vercel.app/"
+                  target="_blank"
+                  className="relative z-10"
+                >
+                  <div className="w-full h-56 rounded-30 overflow-hidden relative group">
+                    <div className="absolute top-0 left-0 w-full h-full bg-green/20 z-10 group-hover:bg-transparent duration-500 ease-linear"></div>
+                    <Image
+                      src={travel}
+                      alt="travel"
+                      fill
+                      className="absolute object-fill"
+                    />
+                  </div>
+                </Link>
 
                 <div className="z-10 relative">
                   <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
@@ -381,14 +432,21 @@ const page = () => {
               <div className="card p-5">
                 <Image src={bg1} alt="bg1" className="bg-card" />
 
-                <div className="w-full h-72 rounded-30 overflow-hidden relative">
-                  <Image
-                    src={person4}
-                    alt="person4"
-                    fill
-                    className="absolute object-cover"
-                  />
-                </div>
+                <Link
+                  href="https://zonexa.vercel.app/"
+                  target="_blank"
+                  className="relative z-10"
+                >
+                  <div className="w-full h-56 rounded-30 overflow-hidden relative group">
+                    <div className="absolute top-0 left-0 w-full h-full bg-green/20 z-10 group-hover:bg-transparent duration-500 ease-linear"></div>
+                    <Image
+                      src={blog}
+                      alt="blog"
+                      fill
+                      className="absolute object-fill"
+                    />
+                  </div>
+                </Link>
 
                 <div className="z-10 relative">
                   <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
@@ -452,79 +510,82 @@ const page = () => {
               </div>
             </AnimatedCard>
 
-            <AnimatedCard styles="card p-5 md:col-span-2 col-span-1">
-              <Image src={bg1} alt="bg1" className="bg-card" />
+            <AnimatedCard>
+              <div className="card p-5">
+                <Image src={bg1} alt="bg1" className="bg-card" />
 
-              <div className="w-full h-72 rounded-30 overflow-hidden relative">
-                <Image
-                  src={person4}
-                  alt="person4"
-                  fill
-                  className="absolute object-cover"
-                />
-              </div>
+                <div className="w-full h-56 rounded-30 overflow-hidden relative group">
+                  <div className="absolute top-0 left-0 w-full h-full bg-green/20 z-10 group-hover:bg-transparent duration-500 ease-linear"></div>
+                  <Image
+                    src={pos}
+                    alt="pos"
+                    fill
+                    className="absolute object-fill"
+                  />
+                </div>
 
-              <div className="z-10 relative">
-                <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
-                  POS (Point of sale system) app
-                </h1>
-                <p
-                  className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
-                >
-                  Technologies:
-                </p>
+                <div className="z-10 relative">
+                  <h1 className="text-lightest-slate font-semibold text-xl mb-1 mt-6">
+                    POS (Point of sale system) app
+                  </h1>
+                  <p
+                    className={`${RobotoMono.className} text-green/60 text-[15px] mt-4 z-10 relative`}
+                  >
+                    Technologies:
+                  </p>
 
-                <ul
-                  className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
-                >
-                  <li className="flex items-center gap-1 mr-3 mb-1">
-                    <BsCaretRight className="text-green text-[12px] " />
-                    Next.js
-                  </li>
-                  <li className="flex items-center gap-1 mr-3 mb-1">
-                    <BsCaretRight className="text-green text-[12px] " />
-                    Next auth
-                  </li>
-                  <li className="flex items-center gap-1 mr-3 mb-1">
-                    <BsCaretRight className="text-green text-[12px] " />
-                    Typescript
-                  </li>
-                  <li className="flex items-center gap-1 mr-3 mb-1">
-                    <BsCaretRight className="text-green text-[12px] " />
-                    Tailwindcss
-                  </li>
-                  <li className="flex items-center gap-1 mr-3 mb-1">
-                    <BsCaretRight className="text-green text-[12px] " />
-                    Node.js (Express.js)
-                  </li>
-                  <li className="flex items-center gap-1 mr-3 mb-1">
-                    <BsCaretRight className="text-green text-[12px] " />
-                    MongoDb
-                  </li>
-                </ul>
+                  <ul
+                    className={`${RobotoMono.className} flex flex-wrap text-lightest-slate/50 text-[13px] lg:text-sm mt-2`}
+                  >
+                    <li className="flex items-center gap-1 mr-3 mb-1">
+                      <BsCaretRight className="text-green text-[12px] " />
+                      Next.js
+                    </li>
+                    <li className="flex items-center gap-1 mr-3 mb-1">
+                      <BsCaretRight className="text-green text-[12px] " />
+                      Next auth
+                    </li>
+                    <li className="flex items-center gap-1 mr-3 mb-1">
+                      <BsCaretRight className="text-green text-[12px] " />
+                      Typescript
+                    </li>
+                    <li className="flex items-center gap-1 mr-3 mb-1">
+                      <BsCaretRight className="text-green text-[12px] " />
+                      Tailwindcss
+                    </li>
+                    <li className="flex items-center gap-1 mr-3 mb-1">
+                      <BsCaretRight className="text-green text-[12px] " />
+                      Node.js (Express.js)
+                    </li>
+                    <li className="flex items-center gap-1 mr-3 mb-1">
+                      <BsCaretRight className="text-green text-[12px] " />
+                      MongoDb
+                    </li>
+                  </ul>
 
-                <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
-                  <li>
-                    <Link
-                      href="https://github.com/chourafiDev/POS_RESTAURANT_UI"
-                      legacyBehavior
-                    >
-                      <a target="_blank" rel="noreferrer">
-                        <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="https://pos-restaurant-ui.vercel.app/en/dashboard"
-                      legacyBehavior
-                    >
-                      <a target="_blank" rel="noreferrer">
-                        <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
-                      </a>
-                    </Link>
-                  </li>
-                </ul>
+                  <ul className="flex justify-end text-lightest-slate/50 gap-4 mt-5">
+                    <li>
+                      <Link
+                        href="https://github.com/chourafiDev/POS_RESTAURANT_UI"
+                        legacyBehavior
+                      >
+                        <a target="_blank" rel="noreferrer">
+                          <BsGithub className="text-2xl hover:text-green duration-150 ease-in" />
+                        </a>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="https://pos-restaurant-plum.vercel.app/en/dashboard"
+                        legacyBehavior
+                      >
+                        <a target="_blank" rel="noreferrer">
+                          <BsBoxArrowUpRight className="text-2xl hover:text-green duration-150 ease-in" />
+                        </a>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </AnimatedCard>
           </div>
