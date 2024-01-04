@@ -14,6 +14,7 @@ import booking from "/public/assets/imgs/projects/booking.png";
 import travel from "/public/assets/imgs/projects/travel.png";
 import blog from "/public/assets/imgs/projects/blog.png";
 import pos from "/public/assets/imgs/projects/pos.png";
+import chourafidev from "/public/assets/imgs/chourafidev.jpg";
 
 export {
   bg1,
@@ -32,4 +33,5 @@ export {
   travel,
   blog,
   pos,
+  chourafidev,
 };

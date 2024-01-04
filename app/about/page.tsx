@@ -4,7 +4,7 @@ import AnimatedCard from "@/components/ui/AnimatedCard";
 import ContactCard from "@/components/ui/ContactCard";
 import CredentialsCard from "@/components/ui/CredentialsCard";
 import Profiles from "@/components/ui/Profiles";
-import { bg1, icon2, person4, star } from "@/utils/assets";
+import { bg1, chourafidev, icon2, star } from "@/utils/assets";
 import { RobotoMono } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,8 +24,8 @@ const Page = () => {
 
               <div className="w-full h-80 rounded-30 overflow-hidden relative">
                 <Image
-                  src={person4}
-                  alt="person4"
+                  src={chourafidev}
+                  alt="chourafidev"
                   fill
                   className="absolute object-cover"
                 />

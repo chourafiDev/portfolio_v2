@@ -1,4 +1,4 @@
-import { bg1, person4 } from "@/utils/assets";
+import { bg1, chourafidev } from "@/utils/assets";
 import { RobotoMono } from "@/utils/fonts";
 import Image from "next/image";
 import { HiDownload } from "react-icons/hi";
@@ -10,9 +10,10 @@ const AboutMeCard = () => {
 
       <div className="about-me">
         <Image
-          src={person4}
-          alt="person4"
+          src={chourafidev}
+          alt="chourafidev"
           fill
+          quality={100}
           className="absolute object-cover rounded-tl-[30px] rounded-br-[30px]"
         />
       </div>
