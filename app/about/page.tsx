@@ -1,5 +1,3 @@
-"use client";
-
 import AnimatedCard from "@/components/ui/AnimatedCard";
 import ContactCard from "@/components/ui/ContactCard";
 import CredentialsCard from "@/components/ui/CredentialsCard";
@@ -7,73 +5,74 @@ import Profiles from "@/components/ui/Profiles";
 import { bg1, chourafidev, icon2, star } from "@/utils/assets";
 import { RobotoMono } from "@/utils/fonts";
 import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { BsFillCaretRightFill } from "react-icons/bs";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import Sticky from "react-sticky-el";
+
+import { BsFillCaretRightFill } from "react-icons/bs";
+
+import StickyCard from "@/components/ui/StickyCard";
+import Link from "next/link";
 
 const Page = () => {
   return (
     <main className="lg:my-16 my-10">
-      <section className="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-0">
+      <section className="lg:flex block items-start gap-6">
+        <StickyCard />
+
         <AnimatedCard>
-          <Sticky scrollElement=".scrollarea" hideOnBoundaryHit={false}>
-            <div className="card md:p-6 p-3">
-              <Image src={bg1} alt="bg1" className="bg-card" />
+          <div className="card lg:hidden block w-full md:p-6 p-3 ">
+            <Image src={bg1} alt="bg1" className="bg-card" />
 
-              <div className="w-full h-80 rounded-30 overflow-hidden relative">
-                <Image
-                  src={chourafidev}
-                  alt="chourafidev"
-                  fill
-                  className="absolute object-cover"
-                />
-              </div>
-
-              <h1 className="text-lightest-slate font-semibold text-xl text-center mb-1 mt-10 z-10 relative">
-                Chourafi Abdelmoanime
-              </h1>
-              <p
-                className={`${RobotoMono.className} text-lightest-slate/60 text-[15px] text-center z-10 relative`}
-              >
-                Full Stack Developer
-              </p>
-
-              <ul className="flex items-center justify-center gap-3 h-16 md:px-10 px-6 mt-6">
-                <li className="w-14 h-14 z-10">
-                  <Link
-                    target="_blank"
-                    href="https://www.linkedin.com/in/abdelmonaime-chourafi-1913961b2/"
-                    className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
-                  >
-                    <FaLinkedinIn className="text-xl" />
-                  </Link>
-                </li>
-                <li className="w-14 h-14 z-10">
-                  <Link
-                    target="_blank"
-                    href="https://github.com/chourafiDev"
-                    className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
-                  >
-                    <FaGithub className="text-xl" />
-                  </Link>
-                </li>
-                <li className="w-14 h-14 z-10">
-                  <Link
-                    target="_blank"
-                    href="https://www.instagram.com/chourafi_abdelmonaime/?hl=en"
-                    className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
-                  >
-                    <FaInstagram className="text-xl" />
-                  </Link>
-                </li>
-              </ul>
+            <div className="w-full h-80 rounded-30 overflow-hidden relative">
+              <Image
+                src={chourafidev}
+                alt="chourafidev"
+                fill
+                className="absolute object-cover"
+              />
             </div>
-          </Sticky>
+
+            <h1 className="text-lightest-slate font-semibold text-xl text-center mb-1 mt-10 z-10 relative">
+              Chourafi Abdelmoanime
+            </h1>
+            <p
+              className={`${RobotoMono.className} text-lightest-slate/60 text-[15px] text-center z-10 relative`}
+            >
+              Full Stack Developer
+            </p>
+
+            <ul className="flex items-center justify-center gap-3 h-16 md:px-10 px-6 mt-6">
+              <li className="w-14 h-14 z-10">
+                <Link
+                  target="_blank"
+                  href="https://www.linkedin.com/in/abdelmonaime-chourafi-1913961b2/"
+                  className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
+                >
+                  <FaLinkedinIn className="text-xl" />
+                </Link>
+              </li>
+              <li className="w-14 h-14 z-10">
+                <Link
+                  target="_blank"
+                  href="https://github.com/chourafiDev"
+                  className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
+                >
+                  <FaGithub className="text-xl" />
+                </Link>
+              </li>
+              <li className="w-14 h-14 z-10">
+                <Link
+                  target="_blank"
+                  href="https://www.instagram.com/chourafi_abdelmonaime/?hl=en"
+                  className="font-medium rounded-full text-base w-full h-full btn-white bg-gradient flex justify-center items-center"
+                >
+                  <FaInstagram className="text-xl" />
+                </Link>
+              </li>
+            </ul>
+          </div>
         </AnimatedCard>
 
-        <div className="col-span-2">
+        <div className="lg:w-4/6 w-full">
           <AnimatedCard>
             <div className="flex items-center justify-center md:gap-8 gap-4 lg:mt-0 mt-16">
               <Image
@@ -363,7 +362,7 @@ const Page = () => {
         </div>
       </section>
 
-      <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
+      <section className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-20">
         <AnimatedCard styles="lg:order-1 order-1">
           <Profiles />
         </AnimatedCard>
