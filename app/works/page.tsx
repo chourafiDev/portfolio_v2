@@ -32,7 +32,7 @@ const page = () => {
               <Image src={bg1} alt="bg1" className="bg-card" />
 
               <Link
-                href="https://yanerp-app.vercel.app/admin/dashboard"
+                href="https://nord-school.vercel.app/admin/dashboard"
                 target="_blank"
                 className="relative z-10"
               >
